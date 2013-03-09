@@ -1,9 +1,7 @@
 package grails.example
 
 import grails.plugin.spock.IntegrationSpec
-import org.springframework.stereotype.Repository
 
-@Repository
 class InjectSpec extends IntegrationSpec {
 
     def myBean
@@ -41,3 +39,4 @@ class InjectSpec extends IntegrationSpec {
     }
 
 }
+
