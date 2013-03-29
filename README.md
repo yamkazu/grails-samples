@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yamkazu/grails-examples.png?branch=master)](https://travis-ci.org/yamkazu/grails-examples)
+
 Grails Examples
 ===============
 
