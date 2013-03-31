@@ -6,3 +6,4 @@ branches:
     - master
 script:
   - cd ./spring-auto-scanning && ./grailsw refresh-dependencies && ./grailsw test-app
+  - cd ../cucumber && ./grailsw refresh-dependencies && ./grailsw test-app
