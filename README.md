@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/yamkazu/grails-examples.png?branch=master)](https://travis-ci.org/yamkazu/grails-examples)
+[![Build Status](https://travis-ci.org/yamkazu/grails-samples.png?branch=master)](https://travis-ci.org/yamkazu/grails-samples)
 
-Grails Examples
+Grails Samples
 ===============
 
 Grailsで試したサンプル集です。
