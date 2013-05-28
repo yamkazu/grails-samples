@@ -94,3 +94,5 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'demo.User'
 grails.plugins.springsecurity.authority.className = 'demo.Role'
 grails.plugins.springsecurity.dao.reflectionSaltSourceProperty = 'salt'
+
+beans.passwordEncoder.iterations = 1000
