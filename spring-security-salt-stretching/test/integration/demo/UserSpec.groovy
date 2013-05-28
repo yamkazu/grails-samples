@@ -24,6 +24,7 @@ class UserSpec extends IntegrationSpec {
         user.password == hashedPassword
     }
 
+    @Ignore
     def "usernameをsaltとして使う"() {
         setup:
         def username = "test"
@@ -40,4 +41,19 @@ class UserSpec extends IntegrationSpec {
         user.password == hashedPassword
     }
 
+    def "salt専用のプロパティを追加する"() {
+        setup:
+        def password = "password"
+        def user = new User(username: "test", password: password)
+
+        and: "User#saltをsaltとして使用する"
+        def digest = MessageDigest.getInstance("SHA-256").digest("$password{$user.salt}".getBytes("UTF-8"))
+        def hashedPassword = new String(Hex.encode(digest))
+
+        when: "passwordを設定し新規Userを保存"
+        user.save()
+
+        then: "salt付きでハッシュ化されていること"
+        user.password == hashedPassword
+    }
 }
