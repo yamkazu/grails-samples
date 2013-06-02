@@ -5,6 +5,10 @@ Grails Samples
 
 Grailsで試したサンプル集です。
 
+プラグイン連携
+--------------
+
++ [GrailsのSpring Security Core Pluginでパスワードのソルトとストレッチング](spring-security-salt-stretching/README.md)
 
 テスト
 ------
